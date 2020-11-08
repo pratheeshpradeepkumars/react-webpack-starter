@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "build": "webpack -p",
+    "deploy-gh": "npm build && git subtree push dist origin gh-pages"
   },
   "author": "Pratheesh P S",
   "license": "ISC",
